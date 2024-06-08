@@ -44,7 +44,7 @@ h2 {
 p{
     font-family: 'water';
    text-align: center;
-   animation: fade 1ms linear both;
+   animation: fade .3ms linear both;
    animation-timeline: view();
    color: aliceblue;
 }
