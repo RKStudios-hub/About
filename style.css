@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'water';
+    src: url(water.ttf);
+
+}
+@font-face {
+    font-family: 'water2';
+    src: url(water_2.ttf);
+
+}
+body{
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp (1.125rem, 2vw, 1.25rem);
+
+}
+h3 {
+    
+    font-family: 'water2';
+    stroke: aliceblue;
+    color: #ffffff;
+    font-size: 8rem;
+    margin-top: -5%;
+    text-align: center;
+    margin-right: auto;
+}
+h4 {
+    
+    font-family: 'water2';
+    stroke: aliceblue;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-top: auto;
+    text-align: right;
+    margin-right: 30rem;
+}
+h2 {
+    font-size: 4rem;
+    margin-top: auto;
+    text-align: center;
+     
+}
+
+p{
+    font-family: 'water';
+   text-align: center;
+   animation: fade 1ms linear both;
+   animation-timeline: view();
+   color: aliceblue;
+}
+p1{
+    font-size: 2% ;
+    font-family: 'water';
+   text-align: center;
+   color: aliceblue;
+}
+p4{
+    font-family: 'water';
+   text-align: center;
+   color: aliceblue;
+}
+@keyframes fade {
+    from{
+        opacity: -1;
+    }
+    to {
+        opacity: 6;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10; /* Place the video behind the content */
+}
+
+#background-video {
+    z-index: -10; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #background-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.content {
+    font-family: 'fantasy1';
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    
+}
+.spacer {
+    height: 1vh; /* Adjust this height as needed */
+}
+.content {
+    margin-top: 6.25rem;
+    margin-left: auto;
+    margin-right: auto;    
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border:10px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
+    height: 50% auto;
+    width: 60%;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+  body {
+   
+    padding: 50px;
+    margin: 0;
+  }
+  
+  nav {
+    width: 300px;
+    font-size: 1.3rem;
+    background: rgb(48, 213, 242);
+    color: rgba(255, 255, 255, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  }
+  
+  nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
+  }
+  
+  a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  a:hover { background: #48c3ec; }
+  
+  a:active { background: #1ca8ff; }
+  
+  .navicon {
+    padding: 23px 20px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+  }
+  
+  .navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.87);
+  }
+  
+  .navicon div:before,
+  .navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.87);
+    position: absolute;
+  }
+  
+  .navicon div:before { top: -7px; }
+  
+  .navicon div:after { top: 7px; }
+
+@media(max-width: 998px){
+html{
+    font-size: 50%;
+    .content {
+        margin-top: 6.25rem;
+        margin-left: auto;
+        margin-right: auto;    
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 2rem;
+        border:10px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
+        height:auto;
+        width: 50%;
+}
+}
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    margin-top: 15rem;
+    background-color: #2e9edf;
+    border-radius: 2rem;
+    border:10px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
+    height:auto;
+    width: 100%;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    display: flex;
+    margin-right: 10px;
+    height: 3rem;
+    width: 3rem;
+    padding:  8px;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    right: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;   
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+   
+    list-style-type: none;
+  left: 50%;
+  right: 50%;
+  transform: translate(25%, 50%);
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #3f84c0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    height:auto;
+    width: 100%;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 998px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+  
