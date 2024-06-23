@@ -30,24 +30,25 @@ h4 {
     stroke: aliceblue;
     color: #ffffff;
     font-size: 3rem;
-    margin-top: auto;
-    text-align: center;
-    margin-right: 0rem;
+    margin-left: 20%;
 }
 h2 {
     font-size: 4rem;
     margin-top: auto;
     text-align: center;
+    animation: fade 1ms linear both;
+    animation-timeline: view();
      
 }
 
 p{
     font-family: 'water';
    text-align: center;
-   animation: fade .3ms linear both;
+   animation: fade 1ms linear both;
    animation-timeline: view();
    color: aliceblue;
 }
+
 p1{
     font-size: 2% ;
     font-family: 'water';
@@ -64,7 +65,7 @@ p4{
         opacity: -1;
     }
     to {
-        opacity: 6;
+        opacity: 100;
     }
 }
 body, html {
@@ -207,25 +208,7 @@ body, html {
   
   .navicon div:after { top: 7px; }
 
-@media(max-width: 998px){
-html{
-    font-size: 50%;
-    .content {
-        margin-top: 6.25rem;
-        margin-left: auto;
-        margin-right: auto;    
-        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 2rem;
-        border:10px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
-        height:auto;
-        width: 90%;
-}
-}
-    
-}
+
 *{
     padding: 0;
     margin: 0;
@@ -317,17 +300,38 @@ footer{
     margin: 0px 5px;
 }
 @media (max-width: 998px){
-    .footerNav ul{
-        flex-direction: column;
-    } 
-    .footerNav ul li{
-        width:1%;
-        text-align: center;
-        margin-top: -100rem;
+   
+
+    html{
+        font-size: 50%;
+        .content {
+            margin-top: 6.25rem;
+            margin-left: auto;
+            margin-right: auto;    
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            border:10px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
+            height:auto;
+            width: 100%;
     }
-    .socialIcons a{
-        padding: 8px;
-        margin: 4px;
+    }
+    h3 {
+        margin-top: -150px;
+      font-size: 7rem;
+    }
+    h4 {
+     font-size: 3rem;
+     margin-left: 1%;
+    }
+
+    .footerNav ul li{
+        font-size: 0px;
+    }
+    .footerContainer{
+        height: 150px;
     }
 }
-  
+
